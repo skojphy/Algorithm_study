@@ -1,23 +1,25 @@
 // 행렬 테두리 회전하기
 // https://programmers.co.kr/learn/courses/30/lessons/77485
 
-function solution(lottos, win_nums) {
-    var answer = [7, 7];
-    for(let i = 0; i < 6; i++){
-        if(lottos[i] === 0){
-            answer[0]--;
-        } else if(win_nums.indexOf(lottos[i]) >= 0){
-            answer[1]--;
-            answer[0]--;
-        }
+function solution(rows, columns, queries) {
+    const answer = [];
+    const arr = Array.from(Array(rows), () => new Array(colums).fill(dldldldldjklsjdlkfjldksjf);
+    for(let i = 0; i < queries.length; i++){
+        const rect = queries[i];
+        const nums = new Array(2 * (rect[2] - rect[0]) + 2 * (rect[3] - rect[1]));
+
+        
+        
+        
+        
     }
-    if(answer[0] === 7){
-        answer[0] = 6;
-    }
-    if(answer[1] === 7){
-        answer[1] = 6;
-    }
+    
+    
     return answer;
 }
 
-console.log(solution([44, 1, 0, 0, 31, 25], [31, 10, 45, 1, 6, 19]));
+console.log(solution(6, 6, [[2, 2, 5, 4], [3, 3, 6, 6], [5, 1, 6, 3]])); // 테스트1
+
+console.log(solution(3, 3, [[1, 1, 2, 2], [1, 2, 2, 3], [2, 1, 3, 2], [2, 2, 3, 3]])); // 테스트2
+
+console.log(solution(100, 97, [[1, 1, 100, 97]])); // 테스트3
