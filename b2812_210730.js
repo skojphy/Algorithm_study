@@ -1,9 +1,9 @@
-// var fs = require('fs');
-// var input = fs.readFileSync('/dev/stdin').toString().split('\n');
-// var num = parseInt(input[0][1]);
-// var k = parseInt(input[1]);
-var num = 1924;
-var k = 2;
+var fs = require('fs');
+var input = fs.readFileSync('/dev/stdin').toString().split('\n');
+var num = parseInt(input[0][1]);
+var k = parseInt(input[1]);
+// var num = 1924;
+// var k = 2;
 function solution(num, k){
     let answer = 0;
     const nums = (num + '').split('').map(a => a - 0);
