@@ -1,3 +1,6 @@
+// 메뉴 리뉴얼(Level 2)
+// https://programmers.co.kr/learn/courses/30/lessons/72411
+
 const solution = (orders, course) => {
   const answer = [];
 
